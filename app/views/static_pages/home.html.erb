@@ -42,24 +42,27 @@
             <div class="card-body">
               <h3>Sign Up Today</h3>
               <p>Please fill out this form to register</p>
-              <form>
+              <form accept-charset="UTF-8" action="/users" method="post">
+                <input name="utf8" type="hidden" value="&#x2713;" />
+                <input name="authenticity_token" type="hidden"
+                value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg"
-                  placeholder="Username">
+                  name="user[name]" placeholder="Username">
                 </div>
                 <div class="form-group">
                   <input type="email" class="form-control form-control-lg"
-                  placeholder="Email">
+                  name="user[email]" placeholder="Email">
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control form-control-lg"
-                  placeholder="Password">
+                  name="user[password]" placeholder="Password">
                 </div>
                 <div class="form-group">
                   <input type="password" class="form-control form-control-lg"
-                  placeholder="confirm Password">
+                  name="user[password_confirmation]" placeholder="confirm Password">
                 </div>
-                <input type="submit" value="Submit" class="btn-outline-light btn-block">
+                <input type="submit" name="commit" value="Submit" class="btn-outline-light btn-block">
               </form>
             </div>
           </div>

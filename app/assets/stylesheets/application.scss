@@ -25,6 +25,7 @@ body {
   opacity: 0.8;
 }
 
+
 #home-section {
   background: image-url('home.jpg');
   background-repeat: no-repeat;
@@ -51,4 +52,39 @@ body {
     padding: 5px;
     border-radius: 5px;
   }
+}
+
+// ユーザー詳細ページ //
+
+#user-show-header {
+  padding-top: 150px;
+  .user-image {
+    width: 100%;
+    height: 100%;
+  }
+  .bg-black {
+    color: #fff;
+    background-color: #000;
+  }
+  .port-item {
+    width: 30%;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+}
+
+@media(min-width: 1199px) {
+  .port-item {
+    padding: 3em !important;
+  }
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  color: #fff;
+  width: 100%;
+  margin-top: 45px;
 }

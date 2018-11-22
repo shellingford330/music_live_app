@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get '/' => 'static_pages#home'
-
-  post '/signup' => 'users#create'
-
+  get '/users/:id' => 'users#show'
+  post '/users' => 'users#create'
 end
