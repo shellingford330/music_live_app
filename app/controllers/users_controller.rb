@@ -7,9 +7,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      flash[:success] = "Welcome to my anal"
+      flash[:success] = "Success!!! my anal."
       redirect_to("/users/#{@user.id}")
     else
+      flash[:danger] = " "          #if flash[:danger] をtrueにするため
       render 'static_pages/home'
     end
   end

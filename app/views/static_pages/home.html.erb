@@ -43,6 +43,7 @@
               <h3>Sign Up Today</h3>
               <p>Please fill out this form to register</p>
               <form accept-charset="UTF-8" action="/users" method="post">
+                <%= render 'shared/error_messages' %>
                 <input name="utf8" type="hidden" value="&#x2713;" />
                 <input name="authenticity_token" type="hidden"
                 value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
